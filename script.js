@@ -71,6 +71,7 @@ let theme = document.getElementById("theme");
 let container = document.querySelector(".container");
 let body = document.querySelector("body");
 let nav = document.querySelector(".nav ul");
+let a = document.querySelector("a");
 let form= document.querySelector("form");
 let feedbacks = document.querySelector(".feedbacks");
 let navItems = document.querySelectorAll(".nav ul li");
@@ -84,6 +85,7 @@ theme.addEventListener("click", () => {
         form.style.backgroundColor = "#212121";
         feedbacks.style.backgroundColor = "#212121";
         body.style.color = "#fff";
+a.style.color  = "#fff";
         theme.classList.remove("fa-moon");
         theme.classList.add("fa-sun");
         navItems.forEach((li) => {
@@ -97,6 +99,7 @@ theme.addEventListener("click", () => {
         form.style.backgroundColor = "#fff";
         feedbacks.style.backgroundColor = "#fff";
         body.style.color = "#000";
+a.style.color = "rgba(0, 0, 0, 0.676)";
         theme.classList.remove("fa-sun");
         theme.classList.add("fa-moon");
         navItems.forEach((li) => {
